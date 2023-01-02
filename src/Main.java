@@ -60,4 +60,14 @@ public class Main {
         }
         return ctr_odd;
     }
+
+    public static int sumOfParos(int[] tomb){
+        int sum = 0;
+        for (int i = 0; i < tomb.length; i++) {
+            if (tomb[i] % 2 == 0){
+                sum += tomb[i];
+            }
+        }
+        return sum;
+    }
 }
