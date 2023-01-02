@@ -4,6 +4,8 @@ public class Main {
 
         System.out.println(getMinValue(array));
         System.out.println(evenNumbers(array));
+        System.out.println(max(array));
+        System.out.println(paratlan(array));
     }
 
     public static int getMinValue(int[] numbers){
@@ -25,5 +27,25 @@ public class Main {
             }
         }
         return ctr_even;
+    }
+
+    public static int max (int[] tomb){
+        int max = 0;
+        for (int i = 0; i < tomb.length; i++) {
+            if (tomb[i] > max){
+                max = tomb[i];
+            }
+        }
+        return max;
+    }
+
+    public static int paratlan (int[] tomb){
+        int count = 0;
+        for (int i = 0; i < tomb.length; i++) {
+            if (tomb[i] % 2 != 0){
+                count++;
+            }
+        }
+        return count;
     }
 }
